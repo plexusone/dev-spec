@@ -1,0 +1,79 @@
+{
+  "irVersion": "1.0",
+  "project": "devspec",
+  "repository": "https://github.com/plexusone/dev-spec",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["plexusone"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-04-19",
+      "highlights": [
+        { "description": "Spec-Driven Development Evaluation CLI using LLM-as-a-Judge" },
+        { "description": "Built-in support for Kiro (AWS), SpecKit (GitHub), and PlexusOne SDD methodologies" },
+        { "description": "Multi-provider LLM support via OmniLLM: Anthropic, OpenAI, AWS Bedrock, Google Gemini" }
+      ],
+      "added": [
+        { "description": "SDD type system with YAML frontmatter and markdown body definitions", "commit": "f460125" },
+        { "description": "Type inheritance via `extends` field for extending built-in types", "commit": "f460125" },
+        { "description": "Resolver loads types from project-local, user-global, or built-in sources", "commit": "f460125" },
+        { "description": "Embedded definitions using `go:embed` for zero-configuration startup", "commit": "f460125" },
+        { "description": "Kiro SDD type: three-phase workflow with EARS format (requirements, design, tasks)", "commit": "f460125" },
+        { "description": "SpecKit SDD type: outcome-focused specifications (constitution, spec, plan, tasks)", "commit": "f460125" },
+        { "description": "PlexusOne SDD type: enterprise methodology (MRD, PRD, TRD, PLAN, TASKS)", "commit": "f460125" },
+        { "description": "`check` command: detect SDD type in directory with confidence scoring", "commit": "2490210" },
+        { "description": "`validate` command: validate spec structure against SDD type requirements", "commit": "2490210" },
+        { "description": "`init` command: scaffold spec files for a chosen SDD type", "commit": "2490210" },
+        { "description": "`info` command: get detailed SDD type information for coding assistants", "commit": "2490210" },
+        { "description": "`rubrics` command: get evaluation rubrics (GO/WARN/NO-GO criteria)", "commit": "2490210" },
+        { "description": "`evaluate` command: LLM-powered evaluation using LLM-as-a-Judge", "commit": "2490210" },
+        { "description": "`version` command: display version information", "commit": "2490210" },
+        { "description": "Two evaluation modes: standard (prompt-based) and tool-based with codebase access", "commit": "7c50a66" },
+        { "description": "Per-criterion scoring with weighted aggregation", "commit": "7c50a66" },
+        { "description": "Status aggregation: NO-GO > WARN > GO", "commit": "7c50a66" },
+        { "description": "Dry-run mode for testing evaluation prompts", "commit": "7c50a66" },
+        { "description": "Multi-provider LLM client via OmniLLM (Anthropic, OpenAI, Bedrock, Gemini)", "commit": "7478cdd" },
+        { "description": "LLM tool loop with max 10 iterations for complex evaluations", "commit": "7478cdd" },
+        { "description": "`devspec_check` LLM tool: detect SDD type", "commit": "1568893" },
+        { "description": "`devspec_validate` LLM tool: validate structure", "commit": "1568893" },
+        { "description": "`devspec_info` LLM tool: get SDD type info", "commit": "1568893" },
+        { "description": "`devspec_rubrics` LLM tool: get evaluation rubrics", "commit": "1568893" },
+        { "description": "`read_file` LLM tool: read file contents with 50KB limit and path security", "commit": "1568893" },
+        { "description": "`glob_files` LLM tool: find files by pattern with path sandboxing", "commit": "1568893" },
+        { "description": "TOON output format (default): ~40% fewer tokens than JSON", "commit": "fe01547" },
+        { "description": "JSON output format with 2-space indentation", "commit": "fe01547" },
+        { "description": "JSON-compact output format for APIs", "commit": "fe01547" },
+        { "description": "Text output format: human-readable with status indicators", "commit": "fe01547" },
+        { "description": "Markdown output format: documentation-ready with tables", "commit": "fe01547" },
+        { "description": "Detection package for auto-detecting SDD type from directory structure", "commit": "1fa7bf7" },
+        { "description": "Validation package for deterministic structure checking (no LLM required)", "commit": "1fa7bf7" },
+        { "description": "Scaffold package for generating template files from SDD definitions", "commit": "1fa7bf7" },
+        { "description": "Report generation with multi-agent-spec TeamReport conversion", "commit": "260fa73" }
+      ],
+      "documentation": [
+        { "description": "MkDocs documentation site with Material theme", "commit": "e248494" },
+        { "description": "Getting started guides: installation, quickstart, concepts", "commit": "e248494" },
+        { "description": "SDD type documentation for Kiro, SpecKit, and PlexusOne", "commit": "e248494" },
+        { "description": "CLI reference for all commands", "commit": "e248494" },
+        { "description": "Extensibility guides: custom types, extending built-ins, rubric format", "commit": "e248494" },
+        { "description": "Deployment guides: coding assistants, CI/CD, service deployment", "commit": "e248494" },
+        { "description": "README with installation, quick start, and usage examples", "commit": "6ce218a" },
+        { "description": "v0.1.0 release notes", "commit": "537ac7f" },
+        { "description": "PlexusOne unified MkDocs theme", "commit": "9293271" }
+      ],
+      "dependencies": [
+        { "description": "github.com/spf13/cobra v1.10.2 for CLI framework", "commit": "70b873c" },
+        { "description": "github.com/plexusone/omnillm v0.15.1 for multi-provider LLM support", "commit": "70b873c" },
+        { "description": "github.com/toon-format/toon-go for token-efficient output", "commit": "70b873c" },
+        { "description": "gopkg.in/yaml.v3 v3.0.1 for YAML parsing", "commit": "70b873c" },
+        { "description": "github.com/plexusone/multi-agent-spec/sdk/go v0.8.0 for report integration", "commit": "70b873c" }
+      ],
+      "build": [
+        { "description": "Go 1.26 module configuration", "commit": "70b873c" },
+        { "description": "GitHub Actions shared workflow files", "commit": "d11ba9f" },
+        { "description": "MIT license", "commit": "19e763a" }
+      ]
+    }
+  ]
+}
