@@ -21,3 +21,6 @@ coverage.html
 
 # Build artifacts
 dist/
+
+# MkDocs build output
+site/
