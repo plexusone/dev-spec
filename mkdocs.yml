@@ -1,32 +1,35 @@
 site_name: devspec
 site_description: Spec-Driven Development Evaluation CLI
-site_url: https://plexusone.github.io/dev-spec/
-
-repo_name: plexusone/dev-spec
+site_url: https://plexusone.github.io/dev-spec
 repo_url: https://github.com/plexusone/dev-spec
+repo_name: plexusone/dev-spec
 
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    # Dark mode first (PlexusOne default)
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
     - search.highlight
     - content.code.copy
+
+extra_css:
+  - https://plexusone.dev/css/plexusone-mkdocs.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -35,6 +38,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
+  - pymdownx.details
   - tables
   - toc:
       permalink: true
@@ -72,3 +76,8 @@ nav:
     - Evaluating with LLM: guides/llm-evaluation.md
   - Releases:
     - v0.1.0: releases/v0.1.0.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/plexusone/dev-spec
