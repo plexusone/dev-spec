@@ -34,7 +34,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - admonitions
+  - admonition
   - tables
   - toc:
       permalink: true
@@ -70,3 +70,5 @@ nav:
   - Guides:
     - Writing Good Specs: guides/writing-specs.md
     - Evaluating with LLM: guides/llm-evaluation.md
+  - Releases:
+    - v0.1.0: releases/v0.1.0.md
