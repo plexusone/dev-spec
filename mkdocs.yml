@@ -1,0 +1,72 @@
+site_name: devspec
+site_description: Spec-Driven Development Evaluation CLI
+site_url: https://plexusone.github.io/dev-spec/
+
+repo_name: plexusone/dev-spec
+repo_url: https://github.com/plexusone/dev-spec
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonitions
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Concepts: getting-started/concepts.md
+  - SDD Types:
+    - Overview: sdd-types/overview.md
+    - Kiro: sdd-types/kiro.md
+    - SpecKit: sdd-types/speckit.md
+    - PlexusOne: sdd-types/plexusone.md
+  - CLI Reference:
+    - Overview: cli-reference/overview.md
+    - check: cli-reference/check.md
+    - validate: cli-reference/validate.md
+    - init: cli-reference/init.md
+    - info: cli-reference/info.md
+    - rubrics: cli-reference/rubrics.md
+    - evaluate: cli-reference/evaluate.md
+  - Extensibility:
+    - Custom SDD Types: extensibility/custom-types.md
+    - Extending Built-ins: extensibility/extending.md
+    - Rubric Format: extensibility/rubric-format.md
+  - Deployment:
+    - Overview: deployment/overview.md
+    - Coding Assistants: deployment/coding-assistants.md
+    - CI/CD Pipelines: deployment/cicd.md
+    - Service Deployment: deployment/service.md
+  - Guides:
+    - Writing Good Specs: guides/writing-specs.md
+    - Evaluating with LLM: guides/llm-evaluation.md
