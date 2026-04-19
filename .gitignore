@@ -1,5 +1,5 @@
-# Binary
-devspec
+# Binary (in project root only)
+/devspec
 
 # IDE and editor
 .idea/
