@@ -34,12 +34,12 @@ devspec evaluates project specifications against multiple SDD (Spec-Driven Devel
 
 ## Features
 
-- **Multiple SDD Types**: Built-in support for Kiro, SpecKit, and PlexusOne methodologies
-- **Deterministic Validation**: Structure validation without LLM calls
-- **LLM-as-a-Judge**: AI-powered evaluation using customizable rubrics
-- **Extensible**: Create custom SDD types or extend built-ins
-- **Token-Efficient**: TOON output format saves ~40% tokens vs JSON
-- **Multi-Provider LLM**: Supports Anthropic, OpenAI, AWS Bedrock, Google Gemini
+- 📋 **Multiple SDD Types**: Built-in support for Kiro, SpecKit, and PlexusOne methodologies
+- ✅ **Deterministic Validation**: Structure validation without LLM calls
+- ⚖️ **LLM-as-a-Judge**: AI-powered evaluation using customizable rubrics
+- 🧩 **Extensible**: Create custom SDD types or extend built-ins
+- ⚡ **Token-Efficient**: TOON output format saves ~40% tokens vs JSON
+- 🌐 **Multi-Provider LLM**: Supports Anthropic, OpenAI, AWS Bedrock, Google Gemini
 
 ## Installation
 
