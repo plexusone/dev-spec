@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/plexusone/multi-agent-spec/sdk/go v0.8.0
-	github.com/plexusone/omnillm v0.15.1
+	github.com/plexusone/omnillm v0.15.2
 	github.com/spf13/cobra v1.10.2
 	github.com/toon-format/toon-go v0.0.0-20251202084852-7ca0e27c4e8c
 	gopkg.in/yaml.v3 v3.0.1
@@ -48,11 +48,11 @@ require (
 	github.com/invopop/jsonschema v0.13.0 // indirect
 	github.com/mailru/easyjson v0.9.2 // indirect
 	github.com/openai/openai-go v1.12.0 // indirect
+	github.com/plexusone/omni-openai v0.2.0 // indirect
 	github.com/plexusone/omnillm-anthropic v0.1.0 // indirect
 	github.com/plexusone/omnillm-bedrock v0.5.0 // indirect
 	github.com/plexusone/omnillm-core v0.15.0 // indirect
 	github.com/plexusone/omnillm-gemini v0.1.0 // indirect
-	github.com/plexusone/omnillm-openai v0.1.0 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
 	github.com/tidwall/match v1.2.0 // indirect
