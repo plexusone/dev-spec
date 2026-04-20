@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	ErrNoFrontmatter     = errors.New("no frontmatter found")
+	ErrNoFrontmatter      = errors.New("no frontmatter found")
 	ErrInvalidFrontmatter = errors.New("invalid frontmatter")
 )
 

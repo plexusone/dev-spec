@@ -30,7 +30,7 @@ func NewResolver() *Resolver {
 	homeDir, _ := os.UserHomeDir()
 
 	searchPaths := []string{
-		".devspec/definitions",                           // Project-local
+		".devspec/definitions",                                // Project-local
 		filepath.Join(homeDir, ".config/devspec/definitions"), // User-global
 	}
 

@@ -40,11 +40,11 @@ type Tool interface {
 
 // Client wraps OmniLLM for LLM API calls with tool support.
 type Client struct {
-	config    Config
-	omnillm   *omnillm.ChatClient
-	tools     []Tool
-	toolMap   map[string]Tool
-	maxTurns  int
+	config   Config
+	omnillm  *omnillm.ChatClient
+	tools    []Tool
+	toolMap  map[string]Tool
+	maxTurns int
 }
 
 // NewClient creates a new LLM client.

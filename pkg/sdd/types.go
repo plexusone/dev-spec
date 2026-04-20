@@ -93,7 +93,6 @@ const (
 	RubricLevelSkip RubricLevel = "SKIP"
 )
 
-
 // DetectionResult holds the result of SDD type detection.
 type DetectionResult struct {
 	Detected    bool
@@ -104,12 +103,12 @@ type DetectionResult struct {
 
 // ValidationResult holds the result of structure validation.
 type ValidationResult struct {
-	Valid          bool
-	SDDType        string
+	Valid           bool
+	SDDType         string
 	MissingSections []SectionValidation
 	PresentSections []SectionValidation
-	Errors         []string
-	Warnings       []string
+	Errors          []string
+	Warnings        []string
 }
 
 // SectionValidation holds validation info for a specific section.
@@ -123,10 +122,10 @@ type SectionValidation struct {
 
 // EvaluationResult holds the result of LLM evaluation.
 type EvaluationResult struct {
-	SDDType   string
-	Files     []FileEvaluation
-	Summary   Summary
-	Status    Status
+	SDDType string
+	Files   []FileEvaluation
+	Summary Summary
+	Status  Status
 }
 
 // FileEvaluation holds evaluation results for a single file.

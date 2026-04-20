@@ -72,7 +72,7 @@ func Init(basePath string, sddType *sdd.SDDType, opts Options) (*Result, error) 
 		// Generate template content
 		content := GenerateTemplate(sddType, fileSpec)
 
-		if err := os.WriteFile(fullPath, []byte(content), 0644); err != nil {
+		if err := os.WriteFile(fullPath, []byte(content), 0600); err != nil {
 			return nil, fmt.Errorf("write %s: %w", fullPath, err)
 		}
 
