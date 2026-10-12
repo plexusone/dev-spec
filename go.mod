@@ -6,7 +6,7 @@ require (
 	github.com/plexusone/multi-agent-spec/sdk/go v0.8.0
 	github.com/plexusone/omnillm v0.17.0
 	github.com/spf13/cobra v1.10.2
-	github.com/toon-format/toon-go v0.1.0
+	github.com/toon-format/toon-go v1.0.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
